@@ -1,0 +1,37 @@
+body{
+    background:linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url('../dist/pexels-burst-374870.jpg') center/cover no-repeat;
+    display: flex;
+    @include alg-center;
+}
+.stopwatch{
+    width: 65%;
+    height: 250px;
+    background-color: rgb(245, 245, 220,0.4);
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.4);
+    #timer{
+        font-size: 4rem;
+        text-align: center;
+        width: 100%;
+        margin-inline: auto;
+        padding: 2rem;
+    }
+    .btns{
+        text-align: center;
+        button{
+            cursor: pointer;
+            margin-inline: 10px;
+            border: 0;
+            background-color: transparent;
+            font-size: 2rem;
+            padding: .5rem;
+            width: 100px;
+        }
+        #startstop{
+            color: green;
+        }
+        #reset{
+            color: rgb(185, 0, 0);
+        }
+    }
+}

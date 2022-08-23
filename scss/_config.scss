@@ -1,0 +1,13 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+@mixin alg-center {
+    justify-content: center;
+    align-items: center;
+}

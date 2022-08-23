@@ -1,0 +1,143 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../dist/pexels-burst-374870.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#add-task-container {
+  width: 50vw;
+  padding: 1rem;
+  background-color: rgba(245, 245, 220, 0.1);
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.4);
+  display: flex;
+}
+#add-task-container #input-task {
+  flex: 7;
+  padding: 0.25rem;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  background-color: transparent;
+}
+#add-task-container #input-task::-moz-placeholder {
+  color: #000;
+}
+#add-task-container #input-task:-ms-input-placeholder {
+  color: #000;
+}
+#add-task-container #input-task::placeholder {
+  color: #000;
+}
+#add-task-container #input-task:focus, #add-task-container #input-task:hover {
+  outline: 0;
+  background-color: #fff;
+}
+#add-task-container #add-task {
+  cursor: pointer;
+  flex: 1;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border: 1px solid #000;
+  transition: 0.3s;
+}
+#add-task-container #add-task:hover {
+  background-color: limegreen;
+  border: 1px solid limegreen;
+  color: #fff;
+}
+
+.task {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: rgba(245, 245, 220, 0.5);
+  color: #000;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.4);
+  display: flex;
+  gap: 3px;
+}
+.task span {
+  flex: 6;
+  padding: 0.25rem;
+  font-size: 1.4rem;
+  margin: 0.25rem;
+  overflow: hidden;
+}
+.task button {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.task .checktask {
+  color: #F5993C;
+}
+.task .checktask:hover {
+  color: limegreen;
+}
+.task .deletetask {
+  color: #283747;
+}
+.task .deletetask:hover {
+  color: #000;
+}
+.task.checked {
+  text-decoration: line-through;
+  background: transparent;
+  color: #fff;
+}
+.task.checked .checktask {
+  opacity: 0.5;
+  color: limegreen;
+}
+.task.checked .checktask:hover {
+  color: #F5993C;
+  opacity: 1;
+}
+
+#task-container {
+  max-height: 60vh;
+  width: 50vw;
+  overflow-y: auto;
+}
+#task-container::-webkit-scrollbar {
+  width: 10px;
+  margin-left: 5px;
+}
+#task-container::-webkit-scrollbar-track {
+  border: 0;
+  border-radius: 5px;
+  padding: 2px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#task-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 2px 0;
+}
+
+.to-do-container {
+  box-shadow: -5px -5px 5px 3px rgba(0, 0, 0, 0.6), 5px 5px 5px 3px rgba(0, 0, 0, 0.6);
+  border: 0;
+  border-radius: 30px;
+  padding-bottom: 5px;
+}/*# sourceMappingURL=main.css.map */
